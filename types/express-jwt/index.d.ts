@@ -65,11 +65,9 @@ declare namespace jwt {
 
 declare global {
     namespace Express {
-        // tslint:disable-next-line:no-empty-interface
-        interface User {}
 
         interface Request {
-            user?: User | undefined;
+            user?: any;
         }
     }
 }
